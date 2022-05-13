@@ -17,6 +17,34 @@
           />
         </div>
       </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <p class="freshtext">Fresh & tasty bakery every day</p>
+            <h1>The Perfect fresh Bread</h1>
+            <p class="caption">
+              Cras consequent lectus vestibulum tortor pulvinar, quis quismond
+              nist varius. Aliquim erat volutpat. Nullam quis sagittis nibh ac
+              nulla id orci tempor
+            </p>
+
+            <button class="btn-sefid">Explore our products</button>
+          </div>
+        </div>
+      </div>
+      <div class="icon-hero">
+        <div class="option-hero">
+          <font-awesome-icon icon="fa-solid fa-folder-open" class="fa" />
+          <div class="fs-11">Demos</div>
+        </div>
+        <div class="option-hero">
+          <div class="color-green">
+            <font-awesome-icon icon="fa-solid fa-dollar-sign" class="dollar" />
+            <span class="fw-bolder fs-3">39</span>
+          </div>
+          <div class="fs-11">On Sale</div>
+        </div>
+      </div>
     </header>
     <main></main>
     <footer></footer>

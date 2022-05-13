@@ -6,13 +6,15 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import specific icons */
 import { faCartShopping as fasCartShopping } from '@fortawesome/free-solid-svg-icons'
+import { faFolderOpen as fasFolderOpen } from '@fortawesome/free-solid-svg-icons'
+import { faDollarSign as fasDollarSign } from '@fortawesome/free-solid-svg-icons'
 
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library */
-library.add(fasCartShopping)
+library.add(fasCartShopping, fasFolderOpen, fasDollarSign)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
