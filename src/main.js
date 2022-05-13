@@ -8,13 +8,15 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCartShopping as fasCartShopping } from '@fortawesome/free-solid-svg-icons'
 import { faFolderOpen as fasFolderOpen } from '@fortawesome/free-solid-svg-icons'
 import { faDollarSign as fasDollarSign } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft as fasChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight as fasChevronRight } from '@fortawesome/free-solid-svg-icons'
 
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library */
-library.add(fasCartShopping, fasFolderOpen, fasDollarSign)
+library.add(fasCartShopping, fasFolderOpen, fasDollarSign, fasChevronLeft, fasChevronRight)
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
