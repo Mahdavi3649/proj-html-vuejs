@@ -1,8 +1,10 @@
 @import '~/node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 #app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
+  
+      -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
@@ -11,7 +13,7 @@
         background-color: white;
         color: #5b2ca2;
         padding: 8px 26px;
-        border-radius: 8px;
+        border-radius: 5px;
         border: none;
         font-size: 13px;
         font-weight: 500;
@@ -29,7 +31,7 @@
     background-color: #5b2ca2;
     color: white;
     padding: 8px 26px;
-    border-radius: 8px;
+    border-radius: 5px;
     border: none;
     font-size: 13px;
     font-weight: 500;
@@ -50,8 +52,9 @@
 
   .freshtext {
     color: #878589;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 600;
   }
 

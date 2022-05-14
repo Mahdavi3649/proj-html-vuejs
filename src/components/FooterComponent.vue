@@ -117,6 +117,7 @@ footer {
 
   h5 {
     color: #5b2ca2;
+    font-family: "Source Serif Pro", serif;
   }
 
   img {

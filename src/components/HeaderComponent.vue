@@ -11,13 +11,14 @@
         <font-awesome-icon
           icon="fa-solid fa-cart-shopping"
           style="color: #5b2ca2"
+          class="ps-4"
         />
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-4">
-          <p class="freshtext">Fresh & tasty bakery every day</p>
+          <p class="freshtext mb-3">Fresh & tasty bakery every day</p>
           <h1>The Perfect fresh Bread</h1>
           <p class="caption">
             Cras consequent lectus vestibulum tortor pulvinar, quis quismond
@@ -74,7 +75,7 @@ export default {
         {
           id: 5,
           href: "#",
-          text: "location",
+          text: "locations",
         },
         {
           id: 6,
@@ -116,10 +117,11 @@ header {
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 11px;
     color: #5b2ca2;
-    padding: 12px;
-    font-weight: 600;
+    padding: 15px;
+    font-weight: 800;
+    font-family: "Montserrat", sans-serif;
     &:hover {
       color: #5b2ca2;
       border-bottom: 2px solid #5b2ca2;
@@ -129,6 +131,7 @@ header {
   h1 {
     color: #5b2ca2;
     margin-bottom: 16px;
+    font-family: "Source Serif Pro", serif;
   }
 
   .col-4 {

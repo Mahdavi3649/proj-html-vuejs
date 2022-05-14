@@ -4,12 +4,12 @@
       <section class="first-section">
         <div class="row">
           <div class="col-4">
-            <p class="freshtext">our product</p>
+            <p class="freshtext mb-3">our products</p>
             <h3>
               All our delectable pastries are backed fresh in our kitchen very
               morning, and are made with all-natural, all organic ingredients.
             </h3>
-            <button class="btn-banafsh">Start Shopping</button>
+            <button class="btn-banafsh mt-5">Start Shopping</button>
           </div>
           <div class="col-8 d-flex">
             <div class="navigator">
@@ -40,7 +40,7 @@
 
       <section class="corporate mt-64">
         <div class="row">
-          <p class="freshtext text-center">corporate & wedding</p>
+          <p class="freshtext text-center mb-3">corporate & wedding</p>
           <h3 class="text-center mb-4">Baking Special Moment</h3>
 
           <div class="col-6 position-relative">
@@ -92,7 +92,7 @@
               <h2>01</h2>
             </div>
             <div class="desc">
-              <p class="freshtext">manual ingredient selection</p>
+              <p class="freshtext mb-3">manual ingredient selection</p>
               <p class="text-white">
                 Cras consequent lectus vestibulum tortor pulvinar, quis quismond
                 nist varius. Ut en laoreet ex. Aliquim erat volutpat. Nullam
@@ -106,14 +106,14 @@
         <div class="row">
           <div class="col-6 position-relative mt-4">
             <img src="@/assets/img/bakery-process-2.jpg" alt="" />
-            <div class="title text-white">
+            <div class="title text-white w-50">
               <h2>We Start Baking</h2>
             </div>
             <div class="number text-white">
               <h2>02</h2>
             </div>
             <div class="desc-2">
-              <p class="freshtext">sweet & delicious</p>
+              <p class="freshtext mb-3">sweet & delicious</p>
               <p class="text-white">
                 Cras consequent lectus vestibulum tortor pulvinar, quis quismond
                 nist varius. Ut en laoreet ex. Aliquim erat volutpat. Nullam
@@ -125,7 +125,7 @@
 
           <div class="col-6 mt-4">
             <div class="bg-pearl p-5">
-              <p class="freshtext mb-5">dont just take word for it</p>
+              <p class="freshtext mb-3">dont just take word for it</p>
               <h3>
                 "Finally found an alternative to the mass produced products.
                 something that incorporates real organic ingredients, nutrient
@@ -146,7 +146,7 @@
               <h2>03</h2>
             </div>
             <div class="desc-2">
-              <p class="freshtext">baked to order & gift wrapped</p>
+              <p class="freshtext mb-3">baked to order & gift wrapped</p>
               <p class="text-white">
                 Cras consequent lectus vestibulum tortor pulvinar, quis quismond
                 nist varius. Ut en laoreet ex. Aliquim erat volutpat. Nullam
@@ -161,7 +161,7 @@
       <section class="location mt-64">
         <div class="row">
           <div class="text-center mt-4">
-            <p class="freshtext">location</p>
+            <p class="freshtext mb-3">locations</p>
             <h3>Visit our Bakeries</h3>
             <div class="col-12">
               <img src="@/assets/img/new-york-bk.jpg" alt="" />
@@ -209,9 +209,12 @@
           <div
             class="col-6 bg-color d-flex flex-column justify-content-center align-items-center"
           >
-            <p class="freshtext">made for sharing</p>
+            <p class="freshtext mb-3">made for sharing</p>
             <h3>let's stay in touch</h3>
-            <button class="btn-banafsh mt-3">Follow Us</button>
+            <button class="btn-banafsh mt-3">
+              <font-awesome-icon icon="fa-brands fa-instagram" class="pe-1" />
+              Follow Us
+            </button>
           </div>
           <div class="col-3">
             <img src="@/assets/img/social-2.jpg" alt="" />
@@ -236,7 +239,7 @@
     <div class="call-to-action mt-64 position-relative">
       <img src="@/assets/img/call-to-action-bg.jpg" alt="" />
       <div class="caption-call">
-        <p class="freshtext">try our seasonal products</p>
+        <p class="freshtext mb-3">try our seasonal products</p>
         <h2 class="text-white">Order for pick-up or delivery to your home</h2>
         <button class="btn-sefid mt-5">Shop Now</button>
       </div>
@@ -272,6 +275,7 @@ export default {
 main {
   h3 {
     color: #5b2ca2;
+    font-family: "Source Serif Pro", serif;
   }
   .first-section {
     padding: 3rem 0;
@@ -332,13 +336,15 @@ main {
 
     .title {
       position: absolute;
-      top: 40px;
+      top: 30px;
       left: 50px;
+      width: 35%;
+      font-family: "Source Serif Pro", serif;
     }
 
     .number {
       position: absolute;
-      top: 40px;
+      top: 30px;
       right: 90px;
     }
 
@@ -353,7 +359,8 @@ main {
       position: absolute;
       bottom: 3px;
       left: 55px;
-      width: 40%;
+      width: 55%;
+      padding-bottom: 16px;
     }
 
     .bg-pearl {
@@ -393,11 +400,15 @@ main {
       height: 350px;
     }
 
+    h2 {
+      font-family: "Source Serif Pro", serif;
+    }
+
     .caption-call {
       position: absolute;
       left: 200px;
       top: 80px;
-      width: 40%;
+      width: 35%;
     }
   }
 }
