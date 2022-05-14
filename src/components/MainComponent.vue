@@ -102,6 +102,135 @@
             </div>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-6 position-relative mt-4">
+            <img src="@/assets/img/bakery-process-2.jpg" alt="" />
+            <div class="title text-white">
+              <h2>We Start Baking</h2>
+            </div>
+            <div class="number text-white">
+              <h2>02</h2>
+            </div>
+            <div class="desc-2">
+              <p class="freshtext">sweet & delicious</p>
+              <p class="text-white">
+                Cras consequent lectus vestibulum tortor pulvinar, quis quismond
+                nist varius. Ut en laoreet ex. Aliquim erat volutpat. Nullam
+                quis sagittis nibh. Morbi consectetur ultricies ante ac conque.
+                donec lorem erat, finibus in velit placerat,
+              </p>
+            </div>
+          </div>
+
+          <div class="col-6 mt-4">
+            <div class="bg-pearl p-5">
+              <p class="freshtext mb-5">dont just take word for it</p>
+              <h3>
+                "Finally found an alternative to the mass produced products.
+                something that incorporates real organic ingredients, nutrient
+                dense wellness while promoting sustainablity and activity."
+              </h3>
+              <p class="caption mt-5">Rachel cooper, Founder</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 position-relative mt-4">
+            <img src="@/assets/img/bakery-process-3.jpg" alt="" />
+
+            <div class="title text-white">
+              <h2>Delivered to your home</h2>
+            </div>
+            <div class="number text-white">
+              <h2>03</h2>
+            </div>
+            <div class="desc-2">
+              <p class="freshtext">baked to order & gift wrapped</p>
+              <p class="text-white">
+                Cras consequent lectus vestibulum tortor pulvinar, quis quismond
+                nist varius. Ut en laoreet ex. Aliquim erat volutpat. Nullam
+                quis sagittis nibh. Morbi consectetur ultricies ante ac conque.
+                donec lorem erat, finibus in velit placerat, rutrum augue
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="location mt-64">
+        <div class="row">
+          <div class="text-center mt-4">
+            <p class="freshtext">location</p>
+            <h3>Visit our Bakeries</h3>
+            <div class="col-12">
+              <img src="@/assets/img/new-york-bk.jpg" alt="" />
+              <img src="@/assets/img/london-bk.jpg" alt="" />
+            </div>
+            <div class="row">
+              <div class="col-6 bg-ny d-flex p-4">
+                <div class="col-4 pt-56">
+                  <div class="freshtext">call us</div>
+                  <div class="freshtext">1.800.458.556</div>
+                </div>
+                <div class="col-4">
+                  <h3>New York</h3>
+                  <div class="freshtext pt-3">open all week</div>
+                  <div class="freshtext">9:00 am - 6:00 pm</div>
+                </div>
+                <div class="col-4 pt-56">
+                  <button class="btn-sefid">View Map</button>
+                </div>
+              </div>
+              <div class="col-6 bg-ln d-flex pt-4">
+                <div class="col-4 pt-56">
+                  <div class="freshtext">call us</div>
+                  <div class="freshtext">1.800.458.556</div>
+                </div>
+                <div class="col-4">
+                  <h3>London</h3>
+                  <div class="freshtext pt-3">open all week</div>
+                  <div class="freshtext">9:00 am - 6:00 pm</div>
+                </div>
+                <div class="col-4 pt-56">
+                  <button class="btn-sefid">View Map</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="social mt-64">
+        <div class="row">
+          <div class="col-3">
+            <img src="@/assets/img/social-1.jpg" alt="" />
+          </div>
+          <div
+            class="col-6 bg-color d-flex flex-column justify-content-center align-items-center"
+          >
+            <p class="freshtext">made for sharing</p>
+            <h3>let's stay in touch</h3>
+            <button class="btn-banafsh mt-3">Follow Us</button>
+          </div>
+          <div class="col-3">
+            <img src="@/assets/img/social-2.jpg" alt="" />
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-3">
+            <img src="@/assets/img/social-3.jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="@/assets/img/social-4.jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="@/assets/img/social-5.jpg" alt="" />
+          </div>
+          <div class="col-3">
+            <img src="@/assets/img/social-6.jpg" alt="" />
+          </div>
+        </div>
       </section>
     </div>
   </main>
@@ -210,6 +339,44 @@ main {
       bottom: 30px;
       right: 80px;
       width: 40%;
+    }
+
+    .desc-2 {
+      position: absolute;
+      bottom: 3px;
+      left: 55px;
+      width: 40%;
+    }
+
+    .bg-pearl {
+      background-color: #e9dedc;
+      max-width: 98%;
+      height: 400px;
+    }
+  }
+
+  .location {
+    img {
+      float: left;
+      max-width: 50%;
+    }
+
+    .bg-ny {
+      background-color: #f1f9fb;
+    }
+
+    .bg-ln {
+      background-color: #faf3e3;
+    }
+  }
+
+  .social {
+    .bg-color {
+      background-color: #e9dedc;
+    }
+
+    img {
+      max-width: 100%;
     }
   }
 }
