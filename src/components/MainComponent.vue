@@ -67,7 +67,7 @@
 
       <section class="shop mt-64">
         <div class="row">
-          <div class="col-3 text-center">
+          <div class="col-4 text-center">
             <h3>Find a freshly backed producted perfect for you</h3>
             <p class="f-s12">
               integer a nibh vitae ex porttitor rutrum et ut velit. etiam ac
@@ -76,12 +76,17 @@
             </p>
             <button class="btn-banafsh">Shop All Products</button>
           </div>
-          <div class="col-9"></div>
+
+          <ShopComponent
+            :item="item"
+            v-for="(item, index) in images"
+            :key="index"
+          />
         </div>
       </section>
 
       <section class="manual mt-64">
-        <div class="row">
+        <div class="row p-11">
           <div class="col-12 position-relative">
             <img src="@/assets/img/bakery-process-1.jpg" />
 
@@ -114,7 +119,7 @@
             </div>
             <div class="desc-2">
               <p class="freshtext mb-3">sweet & delicious</p>
-              <p class="text-white">
+              <p class="text-white fs-13">
                 Cras consequent lectus vestibulum tortor pulvinar, quis quismond
                 nist varius. Ut en laoreet ex. Aliquim erat volutpat. Nullam
                 quis sagittis nibh. Morbi consectetur ultricies ante ac conque.
@@ -131,7 +136,7 @@
                 something that incorporates real organic ingredients, nutrient
                 dense wellness while promoting sustainablity and activity."
               </h3>
-              <p class="caption mt-5">Rachel cooper, Founder</p>
+              <p class="caption mt-3 mb-3">Rachel cooper, Founder</p>
             </div>
           </div>
         </div>
@@ -163,39 +168,48 @@
           <div class="text-center mt-4">
             <p class="freshtext mb-3">locations</p>
             <h3>Visit our Bakeries</h3>
-            <div class="col-12">
-              <img src="@/assets/img/new-york-bk.jpg" alt="" />
-              <img src="@/assets/img/london-bk.jpg" alt="" />
+          </div>
+
+          <div class="col-6">
+            <div class="img-wrapper">
+              <img src="@/assets/img/new-york-bk.jpg" class="img-fluid" />
             </div>
-            <div class="row">
-              <div class="col-6 bg-ny d-flex p-4">
-                <div class="col-4 pt-56">
-                  <div class="freshtext">call us</div>
-                  <div class="freshtext">1.800.458.556</div>
-                </div>
-                <div class="col-4">
-                  <h3>New York</h3>
-                  <div class="freshtext pt-3">open all week</div>
-                  <div class="freshtext">9:00 am - 6:00 pm</div>
-                </div>
-                <div class="col-4 pt-56">
-                  <button class="btn-sefid">View Map</button>
-                </div>
-              </div>
-              <div class="col-6 bg-ln d-flex pt-4">
-                <div class="col-4 pt-56">
-                  <div class="freshtext">call us</div>
-                  <div class="freshtext">1.800.458.556</div>
-                </div>
-                <div class="col-4">
-                  <h3>London</h3>
-                  <div class="freshtext pt-3">open all week</div>
-                  <div class="freshtext">9:00 am - 6:00 pm</div>
-                </div>
-                <div class="col-4 pt-56">
-                  <button class="btn-sefid">View Map</button>
-                </div>
-              </div>
+          </div>
+
+          <div class="col-6">
+            <div class="img-wrapper">
+              <img src="@/assets/img/london-bk.jpg" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-6 bg-ny d-flex p-4">
+            <div class="col-4 pt-56">
+              <div class="freshtext">call us</div>
+              <div class="freshtext">1.800.458.556</div>
+            </div>
+            <div class="col-4">
+              <h3>New York</h3>
+              <div class="freshtext pt-3">open all week</div>
+              <div class="freshtext">9:00 am - 6:00 pm</div>
+            </div>
+            <div class="col-4 pt-56">
+              <button class="btn-sefid">View Map</button>
+            </div>
+          </div>
+          <div class="col-6 bg-ln d-flex pt-4">
+            <div class="col-4 pt-56">
+              <div class="freshtext">call us</div>
+              <div class="freshtext">1.800.458.556</div>
+            </div>
+            <div class="col-4">
+              <h3>London</h3>
+              <div class="freshtext pt-3">open all week</div>
+              <div class="freshtext">9:00 am - 6:00 pm</div>
+            </div>
+            <div class="col-4 pt-56">
+              <button class="btn-sefid">View Map</button>
             </div>
           </div>
         </div>
@@ -204,7 +218,9 @@
       <section class="social mt-64">
         <div class="row">
           <div class="col-3">
-            <img src="@/assets/img/social-1.jpg" alt="" />
+            <div class="img-wrapper">
+              <img class="img-fluid" src="@/assets/img/social-1.jpg" alt="" />
+            </div>
           </div>
           <div
             class="col-6 bg-color d-flex flex-column justify-content-center align-items-center"
@@ -217,21 +233,32 @@
             </button>
           </div>
           <div class="col-3">
-            <img src="@/assets/img/social-2.jpg" alt="" />
+            <div class="img-wrapper">
+              <img class="img-fluid" src="@/assets/img/social-2.jpg" alt="" />
+            </div>
           </div>
         </div>
         <div class="row mt-4">
           <div class="col-3">
-            <img src="@/assets/img/social-3.jpg" alt="" />
+            <div class="img-wrapper">
+              <img class="img-fluid" src="@/assets/img/social-3.jpg" alt="" />
+            </div>
           </div>
           <div class="col-3">
-            <img src="@/assets/img/social-4.jpg" alt="" />
+            <div class="img-wrapper">
+              <img class="img-fluid" src="@/assets/img/social-4.jpg" alt="" />
+            </div>
           </div>
           <div class="col-3">
-            <img src="@/assets/img/social-5.jpg" alt="" />
+            <div class="img-wrapper">
+              <img class="img-fluid" src="@/assets/img/social-5.jpg" alt="" />
+            </div>
           </div>
+
           <div class="col-3">
-            <img src="@/assets/img/social-6.jpg" alt="" />
+            <div class="img-wrapper">
+              <img class="img-fluid" src="@/assets/img/social-6.jpg" alt="" />
+            </div>
           </div>
         </div>
       </section>
@@ -248,8 +275,12 @@
 </template>
 
 <script>
+import ShopComponent from "@/components/ShopComponent.vue";
 export default {
   name: "MainComponent",
+  components: {
+    ShopComponent,
+  },
   data() {
     return {
       images: [
@@ -334,6 +365,10 @@ main {
       object-position: center;
     }
 
+    .p-11 {
+      padding: 0 11px;
+    }
+
     .title {
       position: absolute;
       top: 30px;
@@ -365,15 +400,23 @@ main {
 
     .bg-pearl {
       background-color: #e9dedc;
-      max-width: 98%;
+      max-width: 520px;
       height: 400px;
     }
   }
 
   .location {
+    .img-wrapper {
+      overflow: hidden;
+    }
     img {
-      float: left;
-      max-width: 50%;
+      object-fit: cover;
+      transition: 0.7s;
+
+      &:hover {
+        opacity: 0.9;
+        transform: scale(1.2);
+      }
     }
 
     .bg-ny {
@@ -382,6 +425,7 @@ main {
 
     .bg-ln {
       background-color: #faf3e3;
+      width: 560px;
     }
   }
 
@@ -389,9 +433,19 @@ main {
     .bg-color {
       background-color: #e9dedc;
     }
-
+    .img-wrapper {
+      overflow: hidden;
+    }
     img {
-      max-width: 100%;
+      object-fit: cover;
+      transition: 1s;
+
+      &:hover {
+        opacity: 0.9;
+        transform: scale(1.2);
+        height: 100%;
+        max-width: 100%;
+      }
     }
   }
   .call-to-action {
