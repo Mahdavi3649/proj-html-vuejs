@@ -54,6 +54,19 @@
     margin-top: 5rem;
   }
 
+  .col-6 {
+    width: 570px;
+    height: 520px;
+  }
+
+  .p-6{
+    padding: 60px;
+  }
+
+  .col-6-s {
+    width: 556px;
+  }
+
   .freshtext {
     color: #878589;
     font-family: 'Montserrat', sans-serif;
@@ -69,6 +82,7 @@
   .navigator {
     position: relative;
     font-size: 15px;
+    z-index: 1;
 
     .fa {
       background-color: #A691B2;
@@ -76,6 +90,10 @@
       padding: 15px 7px;
       position: absolute;
     }
+  }
+
+  h4{
+    font-family: "Source Serif Pro", serif;
   }
 
 

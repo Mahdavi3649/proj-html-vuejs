@@ -27,13 +27,18 @@
                 />
               </div>
             </div>
-
-            <img
-              :src="thumb.src"
-              class="thumb"
+            <div
+              class="img-wrapper"
               v-for="(thumb, index) in images"
               :key="index"
-            />
+            >
+              <img :src="thumb.src" class="thumb blur" />
+              <div class="content fade text-white">
+                <h4>{{ thumb.title }}</h4>
+                <p>{{ thumb.type }}</p>
+                <h5>{{ thumb.price }}</h5>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -43,23 +48,31 @@
           <p class="freshtext text-center mb-3">corporate & wedding</p>
           <h3 class="text-center mb-4">Baking Special Moment</h3>
 
-          <div class="col-6 position-relative">
-            <div class="">
-              <img src="@/assets/img/corporate-bg.jpg" alt="" />
-            </div>
+          <div class="col-6 position-relative d-flex">
+            <img src="@/assets/img/corporate-bg.jpg" alt="" />
+            <img
+              class="top-img"
+              src="@/assets/img/corporate-hover-bg.jpg"
+              alt=""
+            />
 
             <div class="description">
-              <p class="freshtext">Internation bakery</p>
-              <h4 class="text-white">Corporation Event</h4>
-              <button class="btn-banafsh">Explore more</button>
+              <p class="freshtext text-white">International bakery</p>
+              <h4 class="text-white mt-3">Corporation Event</h4>
+              <button class="btn-banafsh mt-3">Explore more</button>
             </div>
           </div>
           <div class="col-6 position-relative">
-            <img src="@/assets/img/wedding-bg.jpg" alt="" />
+            <img src="@/assets/img/wedding-bg.jpg" />
+            <img
+              class="top-img"
+              src="@/assets/img/wedding-hover-bg.jpg"
+              alt=""
+            />
             <div class="description">
-              <p class="freshtext">Internation bakery</p>
-              <h4 class="text-white">Corporation Event</h4>
-              <button class="btn-banafsh">Explore more</button>
+              <p class="freshtext text-white">International bakery</p>
+              <h4 class="text-white mt-3">Corporation Event</h4>
+              <button class="btn-banafsh mt-3">Explore more</button>
             </div>
           </div>
         </div>
@@ -148,14 +161,14 @@
           </div>
 
           <div class="col-6 mt-4">
-            <div class="bg-pearl p-5">
-              <p class="freshtext mb-3">dont just take word for it</p>
-              <h3>
+            <div class="bg-pearl p-6">
+              <p class="freshtext mb-5">dont just take word for it</p>
+              <h3 class="mb-5">
                 "Finally found an alternative to the mass produced products.
                 something that incorporates real organic ingredients, nutrient
                 dense wellness while promoting sustainablity and activity."
               </h3>
-              <p class="caption mt-3 mb-3">Rachel cooper, Founder</p>
+              <p class="caption mt-5 mb-1">Rachel cooper, Founder</p>
             </div>
           </div>
         </div>
@@ -203,7 +216,7 @@
         </div>
 
         <div class="row gx-1">
-          <div class="col-6 bg-ny d-flex text-center pt-5 pb-5">
+          <div class="col-6-s bg-ny d-flex text-center pt-5 pb-5">
             <div class="col-4 pt-56">
               <div class="freshtext">call us</div>
               <div class="caption">1.800.458.556</div>
@@ -217,7 +230,7 @@
               <button class="btn-sefid">View Map</button>
             </div>
           </div>
-          <div class="col-6 bg-ln d-flex text-center pt-5 pb-5">
+          <div class="col-6-s bg-ln d-flex text-center pt-5 pb-5">
             <div class="col-4 pt-56">
               <div class="freshtext">call us</div>
               <div class="caption">1.800.458.556</div>
@@ -242,7 +255,7 @@
             </div>
           </div>
           <div
-            class="col-6 bg-color d-flex flex-column justify-content-center align-items-center"
+            class="col-6-s bg-color d-flex flex-column justify-content-center align-items-center"
           >
             <p class="freshtext mb-3">made for sharing</p>
             <h3>let's stay in touch</h3>
@@ -359,24 +372,52 @@ main {
   .first-section {
     padding: 3rem 0;
 
-    .thumb {
-      width: calc(100% / 2);
+    .img-wrapper {
+      position: relative;
+
+      .content {
+        position: absolute;
+        width: 100%;
+        inset: 0;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 200ms ease-in-out;
+      }
+
+      img {
+        width: 98%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .img-wrapper:hover > img.blur {
+      filter: blur(1px);
+      color: #a691b2;
+    }
+
+    .img-wrapper:hover > .content.fade {
+      opacity: 1;
     }
 
     .fa-left {
       top: 45%;
-      left: 0;
+      left: 0px;
     }
 
     .fa-right {
       top: 45%;
-      left: 713px;
+      left: 704px;
     }
   }
 
   .corporate {
     img {
-      max-width: 100%;
+      width: 557px;
+      height: 520px;
     }
 
     .description {
@@ -385,11 +426,26 @@ main {
       left: 50%;
       transform: translate(-50%, -50%);
       display: none;
-      margin-top: 1rem;
     }
 
     .col-6:hover .description {
       display: block;
+    }
+
+    .top-img {
+      position: absolute;
+      top: 0;
+      left: 10;
+      opacity: 0;
+      transition: all 0.7s ease;
+      width: 557px;
+      height: 520px;
+    }
+
+    .top-img:hover {
+      opacity: 1;
+      max-width: 100%;
+      height: 100%;
     }
   }
 
@@ -415,7 +471,7 @@ main {
   .manual {
     img {
       max-width: 100%;
-      height: 400px;
+      height: 100%;
       filter: brightness(0.5);
       object-fit: cover;
       object-position: center;
@@ -456,23 +512,31 @@ main {
 
     .bg-pearl {
       background-color: #e9dedc;
-      max-width: 520px;
-      height: 400px;
+      max-width: 100%;
+      height: 100%;
     }
   }
 
   .location {
     .img-wrapper {
       overflow: hidden;
+      max-width: 100%;
+      height: 100%;
     }
     img {
       object-fit: cover;
       transition: 0.7s;
+      max-width: 100%;
+      height: 100%;
 
       &:hover {
         opacity: 0.9;
         transform: scale(1.2);
       }
+    }
+
+    .col-6-s {
+      width: 556px;
     }
 
     .bg-ny {

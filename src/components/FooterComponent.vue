@@ -11,7 +11,7 @@
       </div>
 
       <div class="row">
-        <div class="col-6 menuFooter mt-4">
+        <div class="col-6-s menuFooter mt-4">
           <a v-for="item in menuFooter" :key="item.id" :href="item.href">
             {{ item.text }}
           </a>
@@ -21,7 +21,7 @@
           />
           <span class="order-number">0</span>
         </div>
-        <div class="col-6">
+        <div class="col-6-s">
           <form class="d-flex justify-content-end">
             <input
               class="form-control me-2"
@@ -130,10 +130,6 @@ footer {
     font-size: 12px;
     padding: 0 12px;
     color: #5b2ca2;
-  }
-
-  .btn-banafsh {
-    background-color: #5b2ca2;
   }
 
   input {
