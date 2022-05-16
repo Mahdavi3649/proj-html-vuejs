@@ -77,11 +77,30 @@
             <button class="btn-banafsh">Shop All Products</button>
           </div>
 
-          <ShopComponent
-            :item="item"
-            v-for="(item, index) in images"
-            :key="index"
-          />
+          <div class="col-8 d-flex position-relative">
+            <div class="navigator">
+              <div class="prev">
+                <font-awesome-icon
+                  icon="fa-solid fa-chevron-left"
+                  class="fa-left fa"
+                />
+              </div>
+
+              <div class="next">
+                <font-awesome-icon
+                  icon="fa-solid fa-chevron-right"
+                  class="fa-right fa"
+                />
+              </div>
+            </div>
+
+            <img
+              :src="item.src"
+              v-for="(item, index) in items"
+              :key="index"
+              class="item"
+            />
+          </div>
         </div>
       </section>
 
@@ -183,30 +202,30 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-6 bg-ny d-flex p-4">
+        <div class="row gx-1">
+          <div class="col-6 bg-ny d-flex text-center pt-5 pb-5">
             <div class="col-4 pt-56">
               <div class="freshtext">call us</div>
-              <div class="freshtext">1.800.458.556</div>
+              <div class="caption">1.800.458.556</div>
             </div>
             <div class="col-4">
               <h3>New York</h3>
               <div class="freshtext pt-3">open all week</div>
-              <div class="freshtext">9:00 am - 6:00 pm</div>
+              <div class="caption">9:00 am - 6:00 pm</div>
             </div>
             <div class="col-4 pt-56">
               <button class="btn-sefid">View Map</button>
             </div>
           </div>
-          <div class="col-6 bg-ln d-flex pt-4">
+          <div class="col-6 bg-ln d-flex text-center pt-5 pb-5">
             <div class="col-4 pt-56">
               <div class="freshtext">call us</div>
-              <div class="freshtext">1.800.458.556</div>
+              <div class="caption">1.800.458.556</div>
             </div>
             <div class="col-4">
               <h3>London</h3>
               <div class="freshtext pt-3">open all week</div>
-              <div class="freshtext">9:00 am - 6:00 pm</div>
+              <div class="caption">9:00 am - 6:00 pm</div>
             </div>
             <div class="col-4 pt-56">
               <button class="btn-sefid">View Map</button>
@@ -262,25 +281,27 @@
           </div>
         </div>
       </section>
-    </div>
-    <div class="call-to-action mt-64 position-relative">
-      <img src="@/assets/img/call-to-action-bg.jpg" alt="" />
-      <div class="caption-call">
-        <p class="freshtext mb-3">try our seasonal products</p>
-        <h2 class="text-white">Order for pick-up or delivery to your home</h2>
-        <button class="btn-sefid mt-5">Shop Now</button>
+
+      <div class="row">
+        <div class="call-to-action mt-64 position-relative">
+          <img src="@/assets/img/call-to-action-bg.jpg" alt="" />
+          <div class="caption-call">
+            <p class="freshtext mb-3">try our seasonal products</p>
+            <h2 class="text-white">
+              Order for pick-up or delivery to your home
+            </h2>
+            <button class="btn-sefid mt-5">Shop Now</button>
+          </div>
+        </div>
       </div>
     </div>
   </main>
 </template>
 
 <script>
-import ShopComponent from "@/components/ShopComponent.vue";
 export default {
   name: "MainComponent",
-  components: {
-    ShopComponent,
-  },
+  components: {},
   data() {
     return {
       images: [
@@ -295,6 +316,33 @@ export default {
           title: "Strawberry jam Cookies",
           type: "Cookies, Pasteries",
           price: "$21.00 $42.00",
+        },
+      ],
+
+      items: [
+        {
+          src: require("@/assets/img/choco-chip-cookies.jpg"),
+          title: "Choco Chips Cookies",
+          type: "Cookies, Pasteries",
+          price: "$19.00 $39.00",
+        },
+        {
+          src: require("@/assets/img/strawberry-jam-cookies.jpg"),
+          title: "Strawberry jam Cookies",
+          type: "Cookies, Pasteries",
+          price: "$21.00 $42.00",
+        },
+        {
+          src: require("@/assets/img/strawberry-donut.jpg"),
+          title: "Strawberry Donut",
+          type: "Cookies, Pasteries",
+          price: "$17.00 $34.00",
+        },
+        {
+          src: require("@/assets/img/perfect-macarons.jpg"),
+          title: "Perfect Macarons",
+          type: "Cookies, Pasteries",
+          price: "$23.00 $41.00",
         },
       ],
     };
@@ -315,25 +363,14 @@ main {
       width: calc(100% / 2);
     }
 
-    .navigator {
-      position: relative;
-      font-size: 22px;
+    .fa-left {
+      top: 45%;
+      left: 0;
+    }
 
-      .fa {
-        background-color: rgb(163, 161, 161);
-        color: white;
-        padding: 11px 7px;
-        position: absolute;
-      }
-      .fa-left {
-        top: 45%;
-        left: 0;
-      }
-
-      .fa-right {
-        top: 45%;
-        left: 708px;
-      }
+    .fa-right {
+      top: 45%;
+      left: 713px;
     }
   }
 
@@ -353,6 +390,25 @@ main {
 
     .col-6:hover .description {
       display: block;
+    }
+  }
+
+  .shop {
+    .col-8 {
+      .item {
+        width: calc(100% / 4);
+      }
+
+      .prev {
+        position: absolute;
+        left: 0;
+        top: 45%;
+      }
+      .next {
+        position: absolute;
+        left: 713px;
+        top: 45%;
+      }
     }
   }
 
@@ -450,8 +506,9 @@ main {
   }
   .call-to-action {
     img {
-      max-width: 100vw;
-      height: 350px;
+      width: 1140px;
+      height: 400px;
+      object-fit: cover;
     }
 
     h2 {

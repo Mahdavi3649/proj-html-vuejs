@@ -32,7 +32,7 @@
     </div>
     <div class="icon-hero">
       <div class="option-hero">
-        <font-awesome-icon icon="fa-solid fa-folder-open" class="fa" />
+        <font-awesome-icon icon="fa-solid fa-id-card-clip" class="fa" />
         <div class="fs-11">Demos</div>
       </div>
       <div class="option-hero">
@@ -154,13 +154,13 @@ header {
     .dollar {
       position: absolute;
       top: 16px;
-      left: 6px;
+      left: 3px;
       font-size: 16px;
     }
   }
 
   .color-green {
-    color: #287a00;
+    color: #68bd7e;
   }
 
   .fs-11 {
