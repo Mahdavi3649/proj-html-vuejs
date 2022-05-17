@@ -3,7 +3,7 @@
     <div class="container">
       <section class="first-section">
         <div class="row">
-          <div class="col-4">
+          <div class="col-4 mt-4">
             <p class="freshtext mb-3">our products</p>
             <h3>
               All our delectable pastries are backed fresh in our kitchen very
@@ -504,14 +504,14 @@ main {
 
     .desc-2 {
       position: absolute;
-      bottom: 3px;
+      bottom: 6px;
       left: 55px;
-      width: 55%;
+      width: 38%;
       padding-bottom: 16px;
     }
 
     .bg-pearl {
-      background-color: #e9dedc;
+      background-color: #f3eef3;
       max-width: 100%;
       height: 100%;
     }
@@ -551,7 +551,8 @@ main {
 
   .social {
     .bg-color {
-      background-color: #e9dedc;
+      background-color: #f7f0f2;
+      margin: 0px 7px;
     }
     .img-wrapper {
       overflow: hidden;
@@ -570,7 +571,7 @@ main {
   }
   .call-to-action {
     img {
-      width: 1140px;
+      width: 1118px;
       height: 400px;
       object-fit: cover;
     }

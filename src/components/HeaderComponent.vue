@@ -11,7 +11,7 @@
         <font-awesome-icon
           icon="fa-solid fa-cart-shopping"
           style="color: #5b2ca2"
-          class="ps-4"
+          class="ps-4 pe-2"
         />
       </div>
     </div>
@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col-4">
           <p class="freshtext mb-3">Fresh & tasty bakery every day</p>
-          <h1>The Perfect fresh Bread</h1>
+          <h1>The Perfect Fresh Bread</h1>
           <p class="caption">
             Cras consequent lectus vestibulum tortor pulvinar, quis quismond
             nist varius. Aliquim erat volutpat. Nullam quis sagittis nibh ac
@@ -103,7 +103,6 @@ header {
   height: 600px;
   background-image: url("@/assets/img/hero-header-bakery.jpg");
   background-size: contain;
-  position: relative;
 
   .site-header {
     padding: 1rem 1.6rem;
@@ -140,7 +139,7 @@ header {
 
   .icon-hero {
     position: absolute;
-    right: 20px;
+    right: 30px;
     top: 150px;
     text-align: center;
 

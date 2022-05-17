@@ -43,7 +43,7 @@
             Rights reserved | Powered by WordPress
           </p>
         </div>
-        <div class="col-4 d-flex justify-content-end">
+        <div class="col-4 d-flex justify-content-end align-items-center mq-5">
           <font-awesome-icon
             icon="fa-brands fa-instagram"
             class="social-icon"
@@ -120,6 +120,10 @@ footer {
     font-family: "Source Serif Pro", serif;
   }
 
+  .mq-5 {
+    padding: 0 !important;
+  }
+
   img {
     height: 60px;
   }
@@ -149,8 +153,15 @@ footer {
     margin-top: 7rem;
   }
   .social-icon {
-    padding-left: 1.5rem;
+    margin-left: 1.5rem;
     color: #5b2ca2;
+
+    &:hover {
+      background-color: #bda2fc;
+      border-radius: 6px;
+      padding: 5px;
+      transition: all 0.7s ease;
+    }
   }
 
   .order-number {
