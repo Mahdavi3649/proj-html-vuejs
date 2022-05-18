@@ -160,7 +160,7 @@ footer {
       background-color: #bda2fc;
       border-radius: 6px;
       padding: 5px;
-      transition: all 0.7s ease;
+      transition: 200ms ease-in-out;
     }
   }
 

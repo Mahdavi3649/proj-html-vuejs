@@ -12,11 +12,11 @@
         </div>
         <div class="desc">
           <p class="freshtext mb-3">manual ingredient selection</p>
-          <p class="text-white">
+          <p class="text-white fs-13">
             Cras consequent lectus vestibulum tortor pulvinar, quis quismond
             nist varius. Ut en laoreet ex. Aliquim erat volutpat. Nullam quis
             sagittis nibh. Morbi consectetur ultricies ante ac conque. donec
-            lorem erat, finibus in velit placerat, rutrum augue
+            lorem erat, finibus in velit placerat, rutrum augue.
           </p>
         </div>
       </div>
@@ -70,7 +70,7 @@
             Cras consequent lectus vestibulum tortor pulvinar, quis quismond
             nist varius. Ut en laoreet ex. Aliquim erat volutpat. Nullam quis
             sagittis nibh. Morbi consectetur ultricies ante ac conque. donec
-            lorem erat, finibus in velit placerat, rutrum augue
+            lorem erat, finibus in velit placerat, rutrum augue.
           </p>
         </div>
       </div>

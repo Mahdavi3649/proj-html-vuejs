@@ -100,7 +100,7 @@ export default {
 
 <style scoped lang="scss">
 header {
-  height: 600px;
+  padding-bottom: 5rem;
   background-image: url("@/assets/img/hero-header-bakery.jpg");
   background-size: contain;
 
@@ -116,7 +116,7 @@ header {
     list-style: none;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 11px;
+    font-size: 10px;
     color: #5b2ca2;
     padding: 15px;
     font-weight: 800;
@@ -130,7 +130,6 @@ header {
   h1 {
     color: #5b2ca2;
     margin-bottom: 16px;
-    font-family: "Source Serif Pro", serif;
   }
 
   .col-4 {
